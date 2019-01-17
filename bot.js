@@ -313,19 +313,19 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '1help') {
+    if (message.content === '.rhelp') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**instructions...**')
-        .setDescription('**.r **')
-        .addField('play', 'Play Music')
-        .addField('join', 'join Chanel')
-        .addField('disconnect', 'Ok :) ')
-        .addField('skip', 'Skip')
-        .addField('pause', 'Stopped')
-        .addField('resume', 'Ok )')
-        .addField('queue', 'if you want saw the list')
-        .addField('np', 'if you want saw the song ')
-        .setFooter('(1general_commands) لاظهار الاوامر العامة')
+        .setTitle('**Instructions...**')
+        .setDescription('**Type ( .r ) to play music **')
+        .addField('play', '** Play Music 🎵 **')
+        .addField('join', ' **join Chanel ☑️**')
+        .addField('disconnect', '**Bot has Been disconneted 🔜**')
+        .addField('skip', ' **Skip ⏭**')
+        .addField('pause', '**Stopped ⏸** ')
+        .addField('resume', '**resumed ⏹ **')
+        .addField('queue', '** if you want saw the list 📄 **')
+        .addField('np', '**If you want saw the song 🎼** ')
+        .setFooter('')
       message.channel.send(helpEmbed);
     }
 });
